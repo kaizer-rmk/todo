@@ -1,3 +1,4 @@
+console.log(uuidv4())
 //Read ToDos Data from localStorage
 const getSavedTodos = function(){
     const todosJSON = localStorage.getItem('todos')
@@ -49,9 +50,22 @@ const renderTodos = function(todos,filters){
 
 //Generate Todo DOM
 const generateTodoDOM = function(todo){
-    const p = document.createElement('p')
-    p.textContent = todo.text
-    return p
+    const root = document.createElement('div')
+    const checkBox = document.createElement('input')
+    const todoText = document.createElement('span')
+    const remove = document.createElement('button')
+
+    //Setup CheckBox
+    checkBox.setAttribute('type','checkbox')
+    root.appendChild(checkBox)
+    //setup todo Text
+    todoText.textContent = ` ${todo.text}  ` 
+    root.appendChild(todoText)
+    //setup remove Button
+    remove.textContent = 'x'
+    root.appendChild(remove)
+    
+    return root
 }
 
 //Generate Summary

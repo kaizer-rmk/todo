@@ -17,7 +17,8 @@
     justify-content: center;
 }
 .todos{
-    display: block;
+ 
+    left: 0px;
     margin: 30px;
     color: darkslategray;
     font-weight: 700;
@@ -31,7 +32,7 @@
     justify-content: start;
     padding: 4px;
 }
-button{
+.button{
     border-radius: 100px;
     color:darkcyan;
     background-color:lightblue;
@@ -39,6 +40,10 @@ button{
     padding: 10px;
     text-decoration: none;
 
+}
+button{
+    padding: 0px 4px;
+    margin: 6px;
 }
 label{
     display: block;

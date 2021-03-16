@@ -12,15 +12,16 @@
             <label>
                 <input type="checkbox" id="hide-completed"/>&nbsp;&nbsp;Hide Completed
             </label>
+        </center>
             <div class="items">
                     <div class="todos ">
                 
                     </div>
             </div>
-            
+            <center>
             <form id="new-todo">
                 <input placeholder="Add Todos" name="todo" id="addInput" type="text"/>    
-                <button id="create" type="submit">Add ToDo</button>
+                <button id="create" class="button" type="submit">Add ToDo</button>
             </form>
             <select id="filterBy">
                 <option value="ByEdited">by last Edited</option>
@@ -31,6 +32,7 @@
         </div>
 
         <!-- Script Tag -->
+        <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
         <script src="todo-functions.js"></script>
         <script src="todo.js"></script>
     </body>
