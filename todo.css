@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display:block;
+} 
+.container h1{
+    color: brown;
+    display: flex;
+    justify-content: center;
+}
+.container h2{
+    display: flex;
+    justify-content: center;
+}
+.todos{
+    display: block;
+    margin: 30px;
+    color: darkslategray;
+    font-weight: 700;
+
+}
+.todos h3{
+    color: cornflowerblue;
+}
+.todos p{
+    display: flex;
+    justify-content: start;
+    padding: 4px;
+}
+button{
+    border-radius: 100px;
+    color:darkcyan;
+    background-color:lightblue;
+    border: 2px solid;
+    padding: 10px;
+    text-decoration: none;
+
+}
+label{
+    display: block;
+    margin-top: 10px;
+}
+.items{
+    display: flex;
+    justify-content: center;
+}
+#addInput{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 10px 60px;
+}
+input{
+    border-radius: 100px;
+    color:darkcyan;
+    background-color: whitesmoke;
+    border: 2px solid;
+    padding: 10px 80px;
+    text-decoration: none;
+}

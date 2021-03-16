@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="todo.css"></link>
+    </head>
+    <body>
+        <div class="container">
+            <h1>ToDo App</h1>
+            <h2>Take Note Never Forget</h2>
+            <center>            
+            <input placeholder="Search Todo" name="searchTodo" id="searchInput" type="text"/>
+            <label>
+                <input type="checkbox" id="hide-completed"/>&nbsp;&nbsp;Hide Completed
+            </label>
+            <div class="items">
+                    <div class="todos ">
+                
+                    </div>
+            </div>
+            
+            <form id="new-todo">
+                <input placeholder="Add Todos" name="todo" id="addInput" type="text"/>    
+                <button id="create" type="submit">Add ToDo</button>
+            </form>
+            <select id="filterBy">
+                <option value="ByEdited">by last Edited</option>
+                <option value="ByAlphabet">by Albhabetically</option>
+                <option value="ByRecent">by recently created</option>
+            </select>
+        </center>
+        </div>
+
+        <!-- Script Tag -->
+        <script src="todo-functions.js"></script>
+        <script src="todo.js"></script>
+    </body>
+</html>
